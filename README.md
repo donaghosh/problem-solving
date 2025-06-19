@@ -9,6 +9,7 @@
 - // (Integer division): removes everything after decimal
 - Comment ('#')
 - """ Multi-line string"""
+- Method to convert to string : str()
 
 **Front End**<br>
 https://codepen.io/your-work
