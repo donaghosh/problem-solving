@@ -7,3 +7,5 @@
 - F-string: f"{variable}"
 - String formatting using {} and format(): replaces {} template using format() method
 - String formatting using {variable} and format(): replaces {variable=value} template using format() method
+
+# https://www.pythonanywhere.com/user/dngh30/account/
