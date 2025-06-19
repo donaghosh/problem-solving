@@ -7,7 +7,7 @@
 
 **Python**
 - // (Integer division): removes everything after decimal
-- # (Comment)
+- Comment (#)
 - """ Multi-line string"""
 
 **Front End**<br>
