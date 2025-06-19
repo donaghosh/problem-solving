@@ -10,5 +10,6 @@
 - String formatting using {variable} and format(): replaces {variable=value} template using format() method
 - input() returns string post taking input from user
 - string*integer = printing string integer times
+- truthy = True, falsy = False
 
 [https://www.pythonanywhere.com/user/dngh30/account/](https://www.pythonanywhere.com/user/dngh30/)
