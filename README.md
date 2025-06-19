@@ -5,5 +5,8 @@
 - **C++ build command:** gcc -o new new.cpp -lstdc++
 - **C++ run command:** new
 
+**Python**
+- // (Integer division): removes everything after decimal
+
 **Front End**<br>
 https://codepen.io/your-work
