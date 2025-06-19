@@ -7,6 +7,8 @@
 
 **Python**
 - // (Integer division): removes everything after decimal
+- # (Comment)
+- """ Multi-line string"""
 
 **Front End**<br>
 https://codepen.io/your-work
