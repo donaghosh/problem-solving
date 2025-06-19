@@ -11,6 +11,7 @@
 - input() returns string post taking input from user
 - string*integer = printing string integer times
 - truthy = True, falsy = False
-- 'and', 'or' keywords
+- 'and', 'or' keywords instead of operators
+- Method to convert any data type to boolean : bool()
 
 [https://www.pythonanywhere.com/user/dngh30/account/](https://www.pythonanywhere.com/user/dngh30/)
