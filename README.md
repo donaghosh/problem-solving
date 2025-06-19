@@ -6,12 +6,13 @@
 - **C++ run command:** new
 
 **Python**
-<br>
 *Cheatsheet:*
 - // (Integer division): removes everything after decimal
 - Comment ('#')
 - """ Multi-line string"""
 - Method to convert to string : str()
+- F-string: f"{variable}"
+- String formatting using "{}" and format(): replaces {} template using format() method
 
 **Front End**<br>
 https://codepen.io/your-work
