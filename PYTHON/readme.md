@@ -13,5 +13,6 @@
 - truthy = True, falsy = False
 - 'and', 'or' keywords instead of operators
 - Method to convert any data type to boolean : bool()
+- list(array), tuple, set and dictionary
 
 [https://www.pythonanywhere.com/user/dngh30/account/](https://www.pythonanywhere.com/user/dngh30/)
