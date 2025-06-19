@@ -6,6 +6,7 @@
 - **C++ run command:** new
 
 **Python**
+<br>
 *Cheatsheet:*
 - // (Integer division): removes everything after decimal
 - Comment ('#')
