@@ -31,11 +31,24 @@ Node* Insert(Node* head, int data){
     return head;
 }
 
+bool Search(Node* root, int data){
+    if (root == NULL){
+        return false;
+    }else if(data == root->data){
+        return true;
+    }else if(data > root->data){
+        return Search(root->right, data);
+    }else{
+        return Search(root->left, data);
+    }
+}
+
 int main() {
     Node* root = NULL;
     root = Insert(root, 4);
     root = Insert(root, 3);
     root = Insert(root, 5);
-    std::cout<<root->right->data;
+    bool IsPresent = Search(root, 8);
+    std::cout<<IsPresent;
     return 0;
 }
