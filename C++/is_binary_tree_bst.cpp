@@ -1,5 +1,6 @@
 // Online C++ compiler to run C++ program online
 #include <iostream>
+#include <climits>
 
 struct Node{
     int data;
@@ -50,6 +51,10 @@ bool IsBST(Node* node){
     }
     return IsLesser(node->left, node->data) && IsGreater(node->right,node->data) && IsBST(node->left) && IsBST(node->right);
 }
+bool IsBinarySearchTree(Node* node, int min, int max){
+    if(node==NULL) return true;
+    return node->data > min && node->data < max && IsBinarySearchTree(node->left, min, node->data) && IsBinarySearchTree(node->right, node->data, max);
+}
 int main() {
     // Write C++ code here
     Node* root = NULL;
@@ -61,7 +66,8 @@ int main() {
     root = Insert(root, 6);
     root = Insert(root, 8);
     
-    std::cout << IsBST(root);
+    std::cout << IsBST(root)<<std::endl;
+    std::cout << IsBinarySearchTree(root,INT_MIN,INT_MAX);
 
     return 0;
 }
