@@ -126,6 +126,25 @@ int main() {
     //  *****
     //   ***
     //    *
-
+    for(int i=0; i<n; i++){
+        for(int j=n+i; j>0; j--){
+            if(j>i*2+1){
+                std::cout<<" ";
+            }else{
+            std::cout<<"*";
+            }
+        }
+        std::cout<<std::endl;
+    }
+    for(int i=n; i>0; i--){
+        for(int j=0; j<n+i-1; j++){
+            if(j<n-i){ 
+                std::cout<<" ";
+            }else{
+                std::cout<<"*";
+            }
+        }
+        std::cout<<std::endl;
+    }
     return 0;
 }
