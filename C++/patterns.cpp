@@ -1,0 +1,82 @@
+#include <iostream>
+int takeUserInput(){
+    int t;
+    std::cout<<"Enter a number: ";
+    std::cin>>t;
+    return t;
+}
+int main() {
+    // ****
+    // ****
+    // ****
+    // ****
+    int n = takeUserInput();
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            std::cout<<"*";
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
+    // *
+    // **
+    // ***
+    // ****
+    for(int i=0; i<n; i++){
+        for(int j=0; j<=i; j++){
+            std::cout<<"*";
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
+    // 1
+    // 12
+    // 123
+    // 1234
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            std::cout<<j;
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
+    // 1
+    // 22
+    // 333
+    // 4444
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            std::cout<<i;
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
+    // ****
+    // ***
+    // **
+    // *
+    for(int i=n; i>0; i--){
+        for(int j=0; j<i; j++){
+            std::cout<<"*";
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
+    // 1234
+    // 123
+    // 12
+    // 1
+    for(int i=n; i>=1; i--){
+        for(int j=1; j<=i; j++){
+            std::cout<<j;
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
+    //    *
+    //   ***
+    //  *****
+    // *******
+
+    return 0;
+}
