@@ -146,5 +146,26 @@ int main() {
         }
         std::cout<<std::endl;
     }
+    // *
+    // **
+    // ***
+    // ****
+    // *****
+    // ****
+    // ***
+    // **
+    // *
+    int diff = 0;
+    for(int i=1; i<=2*n-1; i++){
+        int end = i;
+        if(i>n){
+            diff=diff+2;
+        }
+        for(int j=0; j<i-diff; j++){
+            std::cout<<"*";
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
     return 0;
 }
