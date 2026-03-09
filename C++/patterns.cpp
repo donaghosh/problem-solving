@@ -323,5 +323,20 @@ int main() {
         std::cout<<std::endl;
     }
     std::cout<<std::endl;
+    // E
+    // DE
+    // CDE
+    // BCDE
+    // ABCDE
+    asciiValue = 65;
+    int finalValue = asciiValue+n;
+    for(int i=1; i<=n; i++){
+        finalValue=finalValue-i;
+        for(int j=0; j<i; j++){
+            std::cout<<static_cast<char>(finalValue++);
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
     return 0;
 }
