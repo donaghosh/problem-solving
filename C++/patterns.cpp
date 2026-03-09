@@ -281,5 +281,47 @@ int main() {
         std::cout<<std::endl;
     }
     std::cout<<std::endl;
+    //    A
+    //   BBB
+    //  CCCCC
+    // DDDDDDD
+    asciiValue = 65;
+    for(int i=0; i<n; i++){
+        for(int j=n+i; j>0; j--){
+            if(j>i*2+1){
+                std::cout<<" ";
+            }else{
+                std::cout<<static_cast<char>(asciiValue+i);
+            }
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
+    //    A 
+    //   ABA
+    //  ABCBA
+    // ABCDCBA
+    asciiValue = 65;
+    int finalAsciiValue = asciiValue;
+    for(int i=0; i<n; i++){
+        finalAsciiValue = 65;
+        asciiValue=65;
+        for(int j=n+i; j>0; j--){
+            if(j>i*2+1){
+                std::cout<<" ";
+            }else{
+                if(j==i+1){
+                    finalAsciiValue=asciiValue;
+                }else if(j>i+1){
+                    finalAsciiValue = asciiValue++;
+                }else{
+                    finalAsciiValue = --asciiValue;
+                }
+                std::cout<<static_cast<char>(finalAsciiValue);
+            }
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
     return 0;
 }
