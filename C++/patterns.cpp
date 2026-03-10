@@ -149,6 +149,7 @@ int main() {
         }
         std::cout<<std::endl;
     }
+    std::cout<<std::endl;
     // *
     // **
     // ***
@@ -417,5 +418,25 @@ int main() {
         }
         std::cout<<std::endl;
     }
+    std::cout<<std::endl;
+    // 4444444
+    // 4333334
+    // 4322234
+    // 4321234
+    // 4322234
+    // 4333334
+    // 4444444
+    for(int i=0; i<n*2-1; i++){
+        for(int j=0; j<n*2-1; j++){
+             int top = i;
+             int left = j;
+             int down = 2*n-2 - i;
+             int right = 2*n-2 - j;
+             std::cout<<n-std::min(top,std::min(left,std::min(down,right)));
+             
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
     return 0;
 }
