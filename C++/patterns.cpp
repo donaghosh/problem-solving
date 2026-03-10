@@ -338,5 +338,38 @@ int main() {
         std::cout<<std::endl;
     }
     std::cout<<std::endl;
+    // ********
+    // ***  ***
+    // **    **
+    // *      *
+    // *      *
+    // **    **
+    // ***  ***
+    // ********
+    for(int i=0; i<n; i++){
+        int count =0;
+        for(int j=0; j<n*2; j++){
+            if(j>=n-i && count<2*i){
+                count++;
+                std::cout<<" ";
+            }else{
+                std::cout<<"*";
+            }
+        }
+        std::cout<<std::endl;
+    }
+    for(int i=n-1; i>=0; i--){
+        int count =0;
+        for(int j=0; j<n*2; j++){
+            if(j>=n-i && count<2*i  ){
+                count++;
+                std::cout<<" ";
+            }else{
+                std::cout<<"*";
+            }
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
     return 0;
 }
